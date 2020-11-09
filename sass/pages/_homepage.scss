@@ -1,0 +1,551 @@
+// navbar //
+.navbar-expand-lg{
+    .navbar-nav{
+        flex-direction: column;
+        width: 100%;
+        .nav-item{
+            text-align: center;
+            padding: .5rem;
+            &.active{
+                background-color: #118755 ;
+                
+                .nav-link{
+                    color: #ffffff;
+                }
+            }
+            .nav-link{
+                display: inline-block;
+            }
+            img{
+                display: inline-block;
+            }
+        }
+    }
+}
+
+// sidebar //
+header{
+    background: rgba(155,148,95,0.05);
+    padding: .5rem;
+    .header-content{
+        .setting{
+            .icon{
+                img{
+                    float: right;
+                }
+            }
+        }
+        .header-photo{
+            img{
+
+            }
+            .header-titles{
+                .name{
+                    margin-top: 5px;
+                }
+                .title{
+                    color: #03140C;
+                    opacity: 0.8;
+                }
+            }
+        }
+        .notification{
+            .notify-title{
+                button{
+                    width: 100%;
+                    color: #000;
+                    background-color:rgba(155,148,95,0.05);
+                    border-color: rgba(155,148,95,0.05);
+                    img{
+                        margin-right: 10px;
+                    }
+                    span{
+                        line-height: 15px;
+                        background-color:#10D171 !important;
+                        color: #000;;
+                    }
+                }
+            }
+            .notify-details{
+
+            }
+        }
+    }
+}
+
+
+// toasts //
+.toast{
+    margin-top: 15px;
+    opacity: 1;
+    border-radius: 10px;
+    border:none;
+    .toast-body{
+
+    }
+    .toast-header{
+        background-color:
+        img{
+            display: inline-block;
+            margin-right: 15px;
+        }
+        small{
+            display: inline-block;
+        }
+    }
+}
+
+// main //
+.app{
+    .ticket-body{
+        form{
+            .form-control{
+                height: 48px;
+                width: 50%;
+                border-radius: 10px;
+            }
+            .btn-modal{
+                height: 48px;
+                background: #118755 0% 0% no-repeat padding-box;
+                color: #fff;
+                margin-left: auto;
+                border-radius: 10px;
+                img{
+                    margin-right: 15px;
+                }
+            }
+            .modal{
+                .modal-dialog{
+
+                    .modal-content{
+                        .modal-header{
+
+                        }
+                        .modal-body{
+                            .material-textfield{
+                                position: relative;
+                                select,input{
+                                    font-size: 1rem;
+                                    outline: none;
+                                    border: 1px solid gray;
+                                    border-radius: 5px;  
+                                    color: #000;
+                                    border-color: #918A55;
+                                }
+                                label{
+                                    position: absolute;
+                                    font-size: 1rem;
+                                    left: 0;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    background-color: white;
+                                    color: #918A55;
+                                    padding: 0 0.3rem;
+                                    margin: 0 0.5rem;
+                                    transition: .1s ease-out;
+                                    transform-origin: left top;
+                                    pointer-events: none;
+                                    top: 0;
+                                    transform: translateY(-50%) scale(.9);
+                                }
+                            }
+                            .upload {
+                                position: relative;
+                                box-sizing: border-box;
+                                border-radius: 5px;
+                                box-shadow: 0 2px 5px rgba(black, .2);
+                                background: #fff;
+                                animation: fadeup .5s .5s ease both;
+                                transform: translateY(20px);
+                                opacity: 0;
+                                .upload-files {
+                                  
+                                  .body {
+                                        text-align: center;
+                                        height: 147px;
+                                        &.hidden {
+                                                display: none;
+                                        }
+                                    input {
+                                      visibility: hidden;
+                                    }
+                                    i {
+                                      font-size: 65px;
+                                      color: lightgray;
+                                    }
+                                    p {
+                                      font-size: 14px;
+                                      padding-top: 15px;
+                                      line-height: 1.4;
+                                      b,
+                                      a {
+                                        color: #4db6ac;
+                                      }
+                                    }
+                                    &.active {
+                                      border: dashed 2px #4db6ac;
+                                      i {
+                                        box-shadow: 0 0 0 -3px #fff,
+                                        0 0 0 lightgray,
+                                        0 0 0 -3px #fff,
+                                        0 0 0 lightgray;
+                                        animation: file .5s ease both;
+                                      }
+                                      @keyframes file {
+                                        50% {
+                                          box-shadow: -8px 8px 0 -3px #fff,
+                                          -8px 8px 0 lightgray,
+                                          -8px 8px 0 -3px #fff,
+                                          -8px 8px 0 lightgray;
+                                        }
+                                        75%,
+                                        100% {
+                                          box-shadow: -8px 8px 0 -3px #fff,
+                                          -8px 8px 0 lightgray,
+                                          -16px 16px 0 -3px #fff,
+                                          -16px 16px 0 lightgray;
+                                        }
+                                      }
+                                      .pointer-none{
+                                        pointer-events: none;
+                                      }
+                                    }
+                                  }
+                                  footer {
+                                    width: 100%;
+                                    margin: 0 auto;
+                                    height: 0;
+                                    .divider {
+                                      margin: 0 auto;
+                                      width: 0;
+                                      border-top: solid 4px darken(#4db6ac, 3.5%);
+                                      text-align: center;
+                                      overflow: hidden;
+                                      transition: width .5s ease;
+                                      span {
+                                        display: inline-block;
+                                        transform: translateY(-25px);
+                                        font-size: 12px;
+                                        padding-top: 8px;
+                                      }
+                                    }
+                                    &.hasFiles {
+                                      height: auto;
+                                      .divider {
+                                        width: 100%;
+                                        span {
+                                          transform: translateY(0);
+                                          transition: transform .5s .5s ease;
+                                        }
+                                      }
+                                    }
+                                    .list-files {
+                                      width: 320px;
+                                      margin: 0 auto;
+                                      margin-top: 15px;
+                                      padding-left: 5px;
+                                      text-align: center;
+                                      overflow-x: hidden;
+                                      overflow-y: auto;
+                                      max-height: 210px;
+                                      &::-webkit-scrollbar-track {
+                                          background-color: rgba(lightgray, .25);
+                                      }
+                                      &::-webkit-scrollbar {
+                                          width: 4px;
+                                          background-color: rgba(lightgray, .25);
+                                      }
+                                      &::-webkit-scrollbar-thumb {
+                                          background-color: rgba(#4db6ac, .5);
+                                      }
+                                      .file {
+                                        width: 300px;
+                                        min-height: 50px;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        opacity: 0;
+                                        animation: fade .35s ease both;
+                                        .name {
+                                          font-size: 12px;
+                                          white-space: nowrap;
+                                          text-overflow: ellipsis;
+                                          overflow: hidden;
+                                          width: 80px;
+                                          text-align: left;
+                                        }
+                                        .progress {
+                                          width: 175px;
+                                          height: 5px;
+                                          border: solid 1px lightgray;
+                                          border-radius: 2px;
+                                          background: linear-gradient(to left, rgba(#4db6ac, .2), rgba(#4db6ac, .8)) no-repeat;
+                                          background-size: 100% 100%;
+                                          &.active {
+                                            animation: progress 30s linear;
+                                          }
+                                        }
+                              
+                                        @keyframes progress {
+                                          from {
+                                            background-size: 0 100%;
+                                          }
+                                          to {
+                                            background-size: 100% 100%;
+                                          }
+                                        }
+                              
+                                        .done {
+                                          cursor: pointer;
+                                          width: 40px;
+                                          height: 40px;
+                                          background: #4db6ac;
+                                          border-radius: 50%;
+                                          margin-left: -10px;
+                                          transform: scale(0);
+                                          position: relative;
+                                          &:before {
+                                            content: "View";
+                                            position: absolute;
+                                            top: 0;
+                                            left: -5px;
+                                            font-size: 24px;
+                                            opacity: 0;
+                                          }
+                                          &:hover:before {
+                                            transition: all .25s ease;
+                                            top: -30px;
+                                            opacity: 1;
+                                          }
+                                          &.anim {
+                                            animation: done1 .5s ease forwards;
+                                            #path {
+                                              animation: done2 2.5s .5s ease forwards;
+                                            }
+                                          }
+                                          #path {
+                                            stroke-dashoffset: 7387.59423828125;
+                                            stroke-dasharray: 7387.59423828125 7387.59423828125;
+                                            stroke: #fff;
+                                            fill: transparent;
+                                            stroke-width: 50px;
+                                          }
+                                        }
+                                        @keyframes done2 {
+                                          to {
+                                            stroke-dashoffset: 0;
+                                          }
+                                        }
+                                        @keyframes done1 {
+                                          50% {
+                                            transform: scale(.5);
+                                            opacity: 1;
+                                          }
+                                          80% {
+                                            transform: scale(.25);
+                                            opacity: 1;
+                                          }
+                                          100% {
+                                            transform: scale(.5);
+                                            opacity: 1;
+                                          }
+                                        }
+                                      }
+                                    }
+                                    .importar {
+                                      outline: none;
+                                      position: absolute;
+                                      left: 0;
+                                      right: 0;
+                                      bottom: 20px;
+                                      margin: auto;
+                                      border: solid 1px #4db6ac;
+                                      color: #4db6ac;
+                                      background: transparent;
+                                      padding: 8px 15px;
+                                      font-size: 12px;
+                                      border-radius: 4px;
+                                      font-family: Roboto;
+                                      line-height: 1;
+                                      cursor: pointer;
+                                      transform: translateY(15px);
+                                      opacity: 0;
+                                                           visibility: hidden;
+                                      margin-left: calc(50% - 40px);
+                                      &.active {
+                                        transition: transform .5s 1.5s ease, opacity .5s 1.5s ease, background;
+                                        transform: translateY(0);
+                                        opacity: 1;
+                                                                   visibility: visible;
+                                      }
+                                      &:hover{
+                                        background: #4db6ac;
+                                        color: #fff;
+                                      }
+                                    }
+                                  }
+                                }
+                                @keyframes fadeup {
+                                  to {
+                                    transform: translateY(0);
+                                    opacity: 1;
+                                  }
+                                }
+                                @keyframes faderight {
+                                  to {
+                                    transform: translateX(0);
+                                    opacity: 1;
+                                  }
+                                }
+                                @keyframes fade {
+                                  to {
+                                    opacity: 1;
+                                  }
+                                }
+                                @media (max-width: 400px){
+                                  width: 100%;
+                                  height: 100%;
+                                }
+                              }
+                              
+                        }
+                        .modal-footer{
+                            button:first-child{
+                                color: #fff;
+                                background: #118755;
+                                border-radius: 10px;
+                                padding: .5rem 2rem;
+                            }
+                            button:last-child{
+                                color: #918A55;
+                                background: transparent;
+                                border-radius: 10px;
+                                padding: .5rem 2rem;
+                                border: 1px solid  #918A55;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .accordion{
+            .card{
+                border-radius: 10px;
+                border:none;
+                box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
+                .card-header{
+                    position: relative;
+
+                    .sign{
+                        position: absolute;
+                        left: -1px;
+                        top: -1px;
+
+                    }
+                    h2{
+                        button{
+                            display: flex;
+                            align-items: center;
+                            .left-side{
+                                display: inline-block;
+                                border-right: 1px solid #eee;
+                                padding-left: 15px;
+                                padding-right: 15px;
+                                .number{
+                                    display: block;
+                                    font-size: 30px;
+                                    font-weight: 100;
+                                }
+                                .text{
+                                    display: block;
+                                    font-size: 12px;
+                                }
+                            }
+                            .right-side{
+                                display:inline-block;
+                                padding-left: 15px;
+                                .first{
+                                    .text1{
+                                        font-size: 12px;
+                                        color: #55615B;
+                                    }
+                                    img{
+                                        display: inline;
+                                        padding-left: 10px;
+                                        padding-right: 10px;
+                                    }
+                                    .text2{
+                                        font-size: 12px;
+                                        color: #55615B;
+                                    }
+                                }
+                                .second{
+                                    img{
+                                        margin-right: 7px;
+                                    }
+                                    .title{
+                                        font-size: 16px;
+                                        display: inline;
+                                        margin-right: 15px;
+                                    }
+                                    .one{
+                                        font-size: 12px;
+                                        color: #55615B;
+                                        padding-right: 10px;
+                                    }
+                                    .two{
+                                        font-size: 12px;
+                                        padding-right: 10px;
+                                        color: #55615B;
+                                    }
+                                    .three{
+                                        font-size: 12px;
+                                        color: #55615B;
+                                        padding-right: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .collapse{
+                    .card-body{
+                        h6{
+
+                        }
+                        p{
+                            font-size: 13px;
+                        }
+                        .bottom{
+                            .left{
+                                display: inline-block;
+                                img{
+                                    margin-right: 10px;
+                                }
+                                span{
+
+                                }
+                            }
+                            .right{
+                                display: inline-block;
+                                float: right;;
+                                img{
+                                    margin-right: 10px;
+                                }
+                                a{
+                                    color: #000;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 576px){
+    .modal-dialog {
+        max-width: 800px;
+    }
+}

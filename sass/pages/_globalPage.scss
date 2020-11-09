@@ -1,0 +1,57 @@
+body{
+    font-family: $mainFont;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+ul, ol{
+    list-style-type: none;
+    padding-right: 0;
+    padding-left: 0;
+}
+a, a:hover{
+    text-decoration: none;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.7;
+    background: #1c1d21;
+    z-index: 1;
+}
+p{
+    font-size: 15px;
+}
+// back to top //
+
+#scroll-up{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 99999;
+    background: $mainColor;
+    opacity: .9;
+    cursor: pointer;
+    display: none;
+    @include transition-2;
+    i{
+        margin-top: 16px;
+        font-size: 20px;
+        color: #fff;
+        @include transition-2;
+        @include prefixer(transform, rotate(-45deg) , webkit ms);
+    }
+    &:hover i{
+        margin-top: 10px;
+    }
+    &:hover{
+        opacity: 1;
+    }
+}

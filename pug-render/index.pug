@@ -1,0 +1,329 @@
+doctype html
+html
+    head
+        //- head links
+        include ../pug-NotRender/includes/links.pug
+    body
+        section.app
+            .container-fluid
+                .row
+                    .col-12.col-md-3
+                        include ../pug-NotRender/includes/navbar.pug
+                    .col-12.col-md
+                        .row
+                            .col-12
+                                .ticket-body
+                                    form.d-flex.mt-5.mb-4
+                                        input(class="form-control mr-2" type="search" placeholder="Search by Ticket Number" aria-label="Search")
+                                        // Button trigger modal //
+                                        button(type="button" class="btn btn-modal" data-toggle="modal" data-target="#exampleModal")
+                                            img(src="imgs/plus.png")
+                                            | Add New Ticket
+
+                                        // Modal //
+                                        div(class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true")
+                                            .modal-dialog
+                                                .modal-content
+                                                    .modal-header
+                                                        h5(class="modal-title" id="exampleModalLabel") Create New ticket
+                                                        button(type="button" class="btn-close" data-dismiss="modal" aria-label="Close")
+                                                    .modal-body 
+                                                        .row
+                                                            .col-6
+                                                                .material-textfield
+                                                                    select(class="form-select" aria-label="Default select example")
+                                                                        option.selected Open this select menu
+                                                                        option(value="1") One
+                                                                        option(value="2") Two
+                                                                        option(value="3") Three
+                                                                    label Label
+                                                            .col-6
+                                                                .material-textfield
+                                                                    select(class="form-select" aria-label="Default select example")
+                                                                        option.selected Open this select menu
+                                                                        option(value="1") One
+                                                                        option(value="2") Two
+                                                                        option(value="3") Three
+                                                                    label Label
+                                                            .col-6.mt-4
+                                                                .material-textfield
+                                                                    select(class="form-select" aria-label="Default select example")
+                                                                        option.selected Open this select menu
+                                                                        option(value="1") One
+                                                                        option(value="2") Two
+                                                                        option(value="3") Three
+                                                                    label Label
+                                                            .col-6.mt-4
+                                                                .material-textfield
+                                                                    select(class="form-select" aria-label="Default select example")
+                                                                        option.selected Open this select menu
+                                                                        option(value="1") One
+                                                                        option(value="2") Two
+                                                                        option(value="3") Three
+                                                                    label Label
+                                                            .col-6.mt-4
+                                                                .material-textfield
+                                                                    select(class="form-select" aria-label="Default select example")
+                                                                        option.selected Open this select menu
+                                                                        option(value="1") One
+                                                                        option(value="2") Two
+                                                                        option(value="3") Three
+                                                                    label Label
+                                                            .col-6.mt-4
+                                                                .material-textfield
+                                                                    select(class="form-select" aria-label="Default select example")
+                                                                        option.selected Open this select menu
+                                                                        option(value="1") One
+                                                                        option(value="2") Two
+                                                                        option(value="3") Three
+                                                                    label Label
+                                                            .col-6.mt-4
+                                                                .form-check
+                                                                    input(class="form-check-input" type="checkbox" value="" id="flexCheckDefault")
+                                                                    label(class="form-check-label" for="flexCheckDefault")
+                                                                        | Default checkbox
+                                                            .col-6.mt-4
+                                                                .material-textfield
+                                                                    select(class="form-select" aria-label="Default select example")
+                                                                        option.selected Open this select menu
+                                                                        option(value="1") One
+                                                                        option(value="2") Two
+                                                                        option(value="3") Three
+                                                                    label Label
+                                                            .col-6.mt-4
+                                                                .material-textfield
+                                                                    select(class="form-select" aria-label="Default select example")
+                                                                        option.selected Open this select menu
+                                                                        option(value="1") One
+                                                                        option(value="2") Two
+                                                                        option(value="3") Three
+                                                                    label Label
+                                                            .col-6.mt-4
+                                                                .form-check
+                                                                    input(class="form-check-input" type="checkbox" value="" id="flexCheckDefault")
+                                                                    label(class="form-check-label" for="flexCheckDefault")
+                                                                        | Default checkbox
+                                                            .col-6.mt-4
+                                                                .material-textfield
+                                                                    textarea(rows="9" cols="40" class="p-3") Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                                                    label Label
+                                                            .col-6.mt-4
+                                                                .upload
+                                                                    .upload-files
+                                                                        .body#drop
+                                                                            p(class="pointer-none")
+                                                                                
+                                                                                a(href="" id="triggerFile") upload Attachments (PDF, PNG, JPG)
+                                                                            input(type="file" multiple="multiple")
+                                                                        footer
+                                                                            .divider
+                                                                                span
+                                                                                    AR FILES
+                                                                            .list-files
+                                                                            button.importar UPDATE FILES
+                                                    .modal-footer
+                                                        button(type="button" class="btn") Save
+                                                        button(type="button" class="btn" data-dismiss="modal") Cancel
+                                                        
+                                    div(class="accordion" id="accordionExample")
+                                        .card.mb-4
+                                            div(class="card-header p-0" id="headingOne")
+                                                img(src="imgs/sign.png" class="sign")
+                                                h2.mb-0
+                                                    button(class="btn btn-light btn-block text-left p-3 rounded-0" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne")
+                                                        .left-side
+                                                            span.number 5300
+                                                            span.text Ticket No.
+                                                        .right-side
+                                                            .first
+                                                                span.text1 Government Hospitals
+                                                                img(src="imgs/arrow.png")
+                                                                span.text2 King Saud Hospital
+                                                            .second
+                                                                .title The lack of a medical specialty
+                                                                img(src="imgs/date.png")
+                                                                span.one 23 October 2020 - 02:30PM
+                                                                img(src="imgs/phone.png")
+                                                                span.two Phone Call
+                                                                img(src="imgs/location.png")
+                                                                span.three Riyadh
+                                            div(id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample")
+                                                .card-body
+                                                    h6 Couldn’t find Bones Medical specialt at this time
+                                                    p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                                                    .bottom 
+                                                        .left
+                                                            img(src="imgs/label.png")
+                                                            span medical bones and joints department
+                                                        .right
+                                                            img(src="imgs/attachment.png")
+                                                            a(href="#") View Attachments
+                                        .card.mb-4
+                                            div(class="card-header p-0" id="headingtwo")
+                                                img(src="imgs/sign2.png" class="sign")
+                                                h2.mb-0
+                                                    button(class="btn btn-light btn-block text-left p-3 rounded-0" type="button" data-toggle="collapse" data-target="#collapsetwo" aria-expanded="true" aria-controls="collapsetwo")
+                                                        .left-side
+                                                            span.number 5300
+                                                            span.text Ticket No.
+                                                        .right-side
+                                                            .first
+                                                                span.text1 Government Hospitals
+                                                                img(src="imgs/arrow.png")
+                                                                span.text2 King Saud Hospital
+                                                            .second
+                                                                .title The lack of a medical specialty
+                                                                img(src="imgs/date.png")
+                                                                span.one 23 October 2020 - 02:30PM
+                                                                img(src="imgs/phone.png")
+                                                                span.two Phone Call
+                                                                img(src="imgs/location.png")
+                                                                span.three Riyadh
+                                            div(id="collapsetwo" class="collapse" aria-labelledby="headingtwo" data-parent="#accordionExample")
+                                                .card-body
+                                                    h6 Couldn’t find Bones Medical specialt at this time
+                                                    p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                                                    .bottom 
+                                                        .left
+                                                            img(src="imgs/label.png")
+                                                            span medical bones and joints department
+                                                        .right
+                                                            img(src="imgs/attachment.png")
+                                                            a(href="#") View Attachments
+                                        .card.mb-4
+                                            div(class="card-header p-0" id="headingThree")
+                                                img(src="imgs/sign2.png" class="sign")
+                                                h2.mb-0
+                                                    button(class="btn btn-light btn-block text-left p-3 rounded-0" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree")
+                                                        .left-side
+                                                            span.number 5300
+                                                            span.text Ticket No.
+                                                        .right-side
+                                                            .first
+                                                                span.text1 Government Hospitals
+                                                                img(src="imgs/arrow.png")
+                                                                span.text2 King Saud Hospital
+                                                            .second
+                                                                .title The lack of a medical specialty
+                                                                img(src="imgs/date.png")
+                                                                span.one 23 October 2020 - 02:30PM
+                                                                img(src="imgs/phone.png")
+                                                                span.two Phone Call
+                                                                img(src="imgs/location.png")
+                                                                span.three Riyadh
+                                            div(id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample")
+                                                .card-body
+                                                    h6 Couldn’t find Bones Medical specialt at this time
+                                                    p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                                                    .bottom 
+                                                        .left
+                                                            img(src="imgs/label.png")
+                                                            span medical bones and joints department
+                                                        .right
+                                                            img(src="imgs/attachment.png")
+                                                            a(href="#") View Attachments
+                                        .card.mb-4
+                                            div(class="card-header p-0" id="headingFour")
+                                                img(src="imgs/sign2.png" class="sign")
+                                                h2.mb-0
+                                                    button(class="btn btn-light btn-block text-left p-3 rounded-0" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour")
+                                                        .left-side
+                                                            span.number 5300
+                                                            span.text Ticket No.
+                                                        .right-side
+                                                            .first
+                                                                span.text1 Government Hospitals
+                                                                img(src="imgs/arrow.png")
+                                                                span.text2 King Saud Hospital
+                                                            .second
+                                                                .title The lack of a medical specialty
+                                                                img(src="imgs/date.png")
+                                                                span.one 23 October 2020 - 02:30PM
+                                                                img(src="imgs/phone.png")
+                                                                span.two Phone Call
+                                                                img(src="imgs/location.png")
+                                                                span.three Riyadh
+                                            div(id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample")
+                                                .card-body
+                                                    h6 Couldn’t find Bones Medical specialt at this time
+                                                    p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                                                    .bottom 
+                                                        .left
+                                                            img(src="imgs/label.png")
+                                                            span medical bones and joints department
+                                                        .right
+                                                            img(src="imgs/attachment.png")
+                                                            a(href="#") View Attachments
+                                        .card.mb-4
+                                            div(class="card-header p-0" id="headingFive")
+                                                img(src="imgs/sign2.png" class="sign")
+                                                h2.mb-0
+                                                    button(class="btn btn-light btn-block text-left p-3 rounded-0" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive")
+                                                        .left-side
+                                                            span.number 5300
+                                                            span.text Ticket No.
+                                                        .right-side
+                                                            .first
+                                                                span.text1 Government Hospitals
+                                                                img(src="imgs/arrow.png")
+                                                                span.text2 King Saud Hospital
+                                                            .second
+                                                                .title The lack of a medical specialty
+                                                                img(src="imgs/date.png")
+                                                                span.one 23 October 2020 - 02:30PM
+                                                                img(src="imgs/phone.png")
+                                                                span.two Phone Call
+                                                                img(src="imgs/location.png")
+                                                                span.three Riyadh
+                                            div(id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample")
+                                                .card-body
+                                                    h6 Couldn’t find Bones Medical specialt at this time
+                                                    p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                                                    .bottom 
+                                                        .left
+                                                            img(src="imgs/label.png")
+                                                            span medical bones and joints department
+                                                        .right
+                                                            img(src="imgs/attachment.png")
+                                                            a(href="#") View Attachments
+                                        .card
+                                            div(class="card-header p-0" id="headingSix")
+                                                img(src="imgs/sign2.png" class="sign")
+                                                h2.mb-0
+                                                    button(class="btn btn-light btn-block text-left p-3 rounded-0" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix")
+                                                        .left-side
+                                                            span.number 5300
+                                                            span.text Ticket No.
+                                                        .right-side
+                                                            .first
+                                                                span.text1 Government Hospitals
+                                                                img(src="imgs/arrow.png")
+                                                                span.text2 King Saud Hospital
+                                                            .second
+                                                                .title The lack of a medical specialty
+                                                                img(src="imgs/date.png")
+                                                                span.one 23 October 2020 - 02:30PM
+                                                                img(src="imgs/phone.png")
+                                                                span.two Phone Call
+                                                                img(src="imgs/location.png")
+                                                                span.three Riyadh
+                                            div(id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample")
+                                                .card-body
+                                                    h6 Couldn’t find Bones Medical specialt at this time
+                                                    p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                                                    .bottom 
+                                                        .left
+                                                            img(src="imgs/label.png")
+                                                            span medical bones and joints department
+                                                        .right
+                                                            img(src="imgs/attachment.png")
+                                                            a(href="#") View Attachments
+                                                        
+                    .d-none.d-lg-flex.col-md-3
+                        include ../pug-NotRender/includes/side-bar.pug
+                    
+
+
+        //- body js
+        include ../pug-NotRender/includes/js-links.pug
+        

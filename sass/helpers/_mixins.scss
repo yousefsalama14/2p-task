@@ -1,0 +1,75 @@
+// overlay mixin //
+
+@mixin overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+// prefix mixin //
+
+@mixin prefixer($property, $value, $prefixes: ()) {
+    @each $prefix in $prefixes {
+        #{'-' + $prefix + '-' + $property}: $value;
+    }
+    #{$property} : $value;
+}
+
+// global //
+@mixin transition-2{
+    transition: .2s all ease-in-out;
+}
+@mixin i-background{
+    background: #393e46;
+    color: #fff;
+    width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+    cursor: pointer;
+    @include transition-2;
+    &:hover{
+        background: $mainColor;
+    }
+}
+
+@mixin line-height{
+    line-height: 2;
+}
+@mixin letter-spacing{
+    letter-spacing:0.7px; 
+}
+@mixin main-button{
+    text-transform: capitalize;
+    text-align: center;
+    color: #fff;
+    background-color: $mainColor;
+    display: inline-block;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    @include transition-2;
+    &:hover{
+        background-color: $secondColor;
+    }
+}
+@mixin background-pro{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+@mixin map-back{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(../imgs/map.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
